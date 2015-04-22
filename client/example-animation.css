@@ -1,0 +1,46 @@
+/*.example-enter {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+}
+.example-leave {
+  background: red;
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+}*/
+
+/* bounce */
+
+.example-enter {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.example-enter.example-enter-active {
+}
+
+.example-leave {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+  background: yellow;
+  opacity: 1.0;
+  transition: opacity .5s ease-in;
+
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+}
