@@ -37,6 +37,7 @@ TodoApp = React.createClass({
 	},
 
 	componentDidMount: function () {
+		Blaze.render(Template.loginButtons,document.getElementById('login_placeholder'));
 	},
 
 	handleNewTodoKeyDown: function (event) {
@@ -166,6 +167,7 @@ TodoApp = React.createClass({
 		return (
 			<div>
 				<header id="header">
+					<div id="login_placeholder"></div>
 					<h1>todos</h1>
 					<input
 						ref="newField"
